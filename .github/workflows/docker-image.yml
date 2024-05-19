@@ -72,5 +72,5 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: lauwarm/streamlink-recorder:latest
+          tags: akdk0/streamlink-recorder:latest
           labels: ${{ steps.meta.outputs.labels }}
