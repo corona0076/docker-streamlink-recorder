@@ -11,6 +11,6 @@ IFS=';' read -r -a args <<< "$streamOptions"
 
 while [ true ]; do
 	Date=$(date +'%Y-%m-%d %Hh-%Mm-%Ss')
-	streamlink "${args[@]}" "$streamLink" "$streamQuality" -o /home/download/"$streamName"/"$streamName"-"$Date".ts
+	streamlink "${args[@]}" "$streamLink" best -o /home/download/"$streamName"/"$streamName"-"$Date".ts
 	sleep 10s
 done
